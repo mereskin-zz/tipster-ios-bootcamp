@@ -14,8 +14,9 @@ class TipCalculatorController: UIViewController {
 
         let defaults = NSUserDefaults.standardUserDefaults();
 
-        amountText.text = "";
         tipSegment.selectedSegmentIndex = defaults.integerForKey("defaultPercentageIndex");
+
+        amountText.text = "";
         amountText.becomeFirstResponder();
         
         renderTipandTotal();
